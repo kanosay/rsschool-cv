@@ -19,6 +19,10 @@
     }
 ```
 ---
+### My works:
+* [Piano](https://github.com/kanosay/piano)
+* [Adaptive website](https://github.com/kanosay/adaptiveLayout)
+---
 ### Courses:
 * RS Schools Course «JavaScript/Front-end» (in progress)
 ---
