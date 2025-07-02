@@ -44,3 +44,6 @@ const memoizedFn = memoize(function (a, b) {
 ## Languages
 * Kazakh/Russian - native
 * English - B2/C1
+    * Achieved C1 level in EPAM English Proficiency Test
+    * Currently studying in the Czech Republic in English university programs
+    * Comfortable with technical, academic, and conversational English
