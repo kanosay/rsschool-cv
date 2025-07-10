@@ -27,23 +27,27 @@ body {
     margin: 0 auto;
 }
 
+.burger__menu {
+    display: none;
+}
+
 /* header */
 
-.header__nav ul {
+.header__links {
     display: flex;
     justify-content: center;
     gap: 0 35px;
     padding: 40px 0;
 }
 
-.header__nav a {
+.header__nav li a {
     font-size: 22px;
     font-weight: 400;
     color: #212121;
     position: relative;
 }
 
-.header__nav a:after {
+.header__nav li a:after {
 	content: "";
     display: block;
     position: absolute;
@@ -55,7 +59,7 @@ body {
     transition: width 0.5s; 
 }
 
-.header__nav a:hover:after {
+.header__nav li a:hover:after {
 	content: "";
     width: 100%;
     display: block;
@@ -65,4 +69,166 @@ body {
     height: 2px; 
     background-color: #212121;
     transition: width 0.5s;  
+}
+
+/* main */
+
+.main__inner {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__title h1 {
+    line-height: 1.5;
+    font-size: 3rem;
+    color: #14279B;
+    font-weight: 700;
+}
+
+.main__title p {
+    padding-top: 20px;
+    font-size: 1.5rem;
+    color: #212121;
+    line-height: 1.5;
+    max-width: 600px;
+}
+
+.main__logo {
+    border-radius: 15px;
+    background-color: #14279B;
+}
+
+.main__logo img {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.main__logo img:hover {
+    transform: translate(-10px, -10px);
+}
+
+/* skills */
+
+.skills {
+    padding-bottom: 30px;
+}
+
+.skills__lists {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills__inner h2 {
+    color: #14279B;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: 60px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.skill__van,
+.skill__product,
+.skill__game {
+    position: relative;
+    overflow: hidden;
+    background-image: url('images/vanLife.png');
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 2.4em #0000006b;
+}
+
+.skill__product {
+    background-image: url('images/product-page.jpg');
+    background-position: center;
+}
+
+.skill__game {
+    background-image: url('images/endgame.png');
+    background-position: center;
+}
+
+.skill__title {
+    color: #212121;
+    background-color: #fff;
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(100%);
+    
+}
+
+.skill__van:hover .skill__title,
+.skill__product:hover .skill__title,
+.skill__game:hover .skill__title {
+    transform: translateY(0%);
+}
+
+.skill__title h3 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .main__inner {
+        flex-direction: column;
+        justify-content: baseline;
+        align-items: center;
+        padding: 0;
+        text-align: center;
+    }
+
+    .main__logo {
+        margin-top: 20px;
+    }
+
+    .header__links {
+        display: none;
+        flex-direction: column;
+        padding-bottom: 0;
+        text-align: center;
+        gap: 20px 0;
+    }
+
+    .burger__menu {
+        display: block;
+        transform: rotate(180deg);
+        text-align: center;
+        font-size: 30px !important;
+        padding: 20px 0;
+        color: #14279B;;
+    }
+
+    .skills__lists {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+    .skill__van,
+    .skill__product,
+    .skill__game {
+        box-shadow: 0px 0px 1em #0000006b;
+    }
+
 }

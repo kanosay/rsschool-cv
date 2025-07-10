@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,23 +12,71 @@
     <link rel="stylesheet" href="style.css">
     <title>CV</title>
 </head>
+
 <body>
     <header class="header">
         <div class="container">
             <div class="header__inner">
                 <nav class="header__nav">
-                    <ul>
+                    <ul class="header__links">
                         <li><a href="#">Contacts</a></li>
-                        <li><a href="#">Summary</a></li>
+                        <li><a href="#summary">Summary</a></li>
                         <li><a href="#">Skills</a></li>
-                        <li><a href="#">Projects</a></li>
                         <li><a href="#">Education</a></li>
                         <li><a href="#">English</a></li>
                     </ul>
+                    <a class="burger__menu" href="#">^</a>
                 </nav>
             </div>
         </div>
     </header>
+    <main id="summary" class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__title">
+                    <h1>I'm Doszhanuly Abdurakhim<br />Software Engineer</h1>
+                    <p>I am a dedicated and ambitious learner with a strong interest in computer programming and system
+                        development. I am currently focused on mastering the C programming language and exploring the
+                        fundamentals of system programming, while also maintaining and advancing his skills in front-end
+                        web development using technologies like HTML, CSS, JavaScript, and React.</p>
+                </div>
+                <div class="main__logo">
+                    <img src="https://avatars.githubusercontent.com/u/104191246?s=400&u=04c4f1e955ab70eb0e4a81924eb9dd770557476e&v=4"
+                        alt="icon">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="skills">
+        <div class="container">
+            <div class="skills__inner">
+                <h2>Skills</h2>
+                <div class="skills__lists">
+                    <div class="skill__van">
+                        <div class="skill__title">
+                            <h3>React Van Life Project</h3>
+                            <p>This is a personal project I built using React.js, CSS, and React Router. It’s a web</p>
+                        </div>
+                    </div>
+                    <div class="skill__product">
+                        <div class="skill__title">
+                            <h3>E-commerce product page</h3>
+                            <p>This is a personal project I created using HTML, CSS, and JavaScript to simulate a modern
+                                e-commerce product page./p>
+                        </div>
+                    </div>
+                    <div class="skill__game">
+                        <div class="skill__title">
+                            <h3>End Game</h3>
+                            <p>This is a personal project I built using React.js, CSS, and React Router. It’s a small, interactive web app inspired by gaming themes and designed to improve my skills with React components/p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
 </body>
 
 </html>
