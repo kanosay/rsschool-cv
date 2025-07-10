@@ -193,11 +193,6 @@ body {
 
 /* education */
 
-.education {
-    padding-bottom: 30px;
-
-}
-
 .education__inner h2 {
     color: #14279B;
     font-size: 2.5rem;
@@ -214,13 +209,39 @@ body {
 }
 
 .education__inner img {
-    width: 500px;
+    max-width: 400px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
 }
 
+/* Contacts */
 
+.footer {
+    padding-bottom: 20px;
+}
+
+.footer__inner h2 {
+    color: #14279B;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+
+.footer__lists {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    padding-bottom: 10px;
+}
+
+.rs__section img {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+}
 
 @media only screen and (max-width: 1000px) {
     .main__inner {
