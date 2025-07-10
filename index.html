@@ -1,10 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
 </head>
+
 <body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="header__nav">
+                    <ul class="header__links">
+                        <li><a href="#contact">Contacts</a></li>
+                        <li><a href="#summary">Summary</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#education">Education</a></li>
+                    </ul>
+                    <a class="burger__menu" href="#">^</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main id="summary" class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__title">
+                    <h1>I'm Doszhanuly Abdurakhim<br />Software Engineer</h1>
+                    <p>I am a dedicated and ambitious learner with a strong interest in computer programming and system
+                        development. I am currently focused on mastering the C programming language and exploring the
+                        fundamentals of system programming, while also maintaining and advancing his skills in front-end
+                        web development using technologies like HTML, CSS, JavaScript, and React.</p>
+                </div>
+                <div class="main__logo">
+                    <img src="https://avatars.githubusercontent.com/u/104191246?s=400&u=04c4f1e955ab70eb0e4a81924eb9dd770557476e&v=4"
+                        alt="icon">
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="skill" class="skills">
+        <div class="container">
+            <div class="skills__inner">
+                <h2>Skills</h2>
+                <div class="skills__lists">
+                    <div class="skill__van">
+                        <div class="skill__title">
+                            <h3>React Van Life Project</h3>
+                            <p>This is a personal project I built using React.js, CSS, and React Router. It’s a web</p>
+                        </div>
+                    </div>
+                    <div class="skill__product">
+                        <div class="skill__title">
+                            <h3>E-commerce product page</h3>
+                            <p>This is a personal project I created using HTML, CSS, and JavaScript to simulate a modern
+                                e-commerce product page./p>
+                        </div>
+                    </div>
+                    <div class="skill__game">
+                        <div class="skill__title">
+                            <h3>End Game</h3>
+                            <p>This is a personal project I built using React.js, CSS, and React Router. It’s a small, interactive web app inspired by gaming themes and designed to improve my skills with React components/p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="education">
+        <div class="container">
+            <div class="education__inner">
+                <h2>Education</h2>
+                <h3>Unicorn University</h3>
+                <img src="images/unicorn.png" alt="">
+            </div>
+        </div>
+    </section>
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <h2>Contacts</h2>
+                <ul class="footer__lists">
+                    <li><a href="https://www.linkedin.com/in/abdurakhim-doszhanuly-97848734a/">Linkedin</a></li>
+                    <li><a href="https://github.com/kanosay">GitHub</a></li>
+                </ul>
+                <a class="rs__section" href="https://rs.school/courses/javascript-ru"><img src="images/rs-school-logo.svg" alt="Rs-School Logo"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
+
 </html>
